@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPL - Gully Premier League</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, gold, blue);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+
+        main {
+            padding: 0.5em;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.6); /* More transparent white */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 60px;
+            position: relative;
+        }
+
+        h1, h2 {
+            margin: 0 0 1em;
+        }
+
+        .points-table {
+            margin: 2em 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.69em 0;
+            text-align: center;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 0.5em;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .sunrising-indians {
+            background: linear-gradient(to right, orange, blue);
+            color: white;
+        }
+
+        .knight-mega-kings {
+            background: linear-gradient(to right, purple, blue);
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .team {
+            margin: 2em 0;
+        }
+
+        .team h2 {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5em;
+        }
+
+        .team ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .team ul li {
+            background-color: #f9f9f9;
+            margin: 0.5em 0;
+            padding: 0.5em;
+            border: 1px solid #ddd;
+        }
+
+        .team ul li.substitute {
+            background-color: #fff2cc;
+        }
+
+        /* Styles for the images */
+        .side-image {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 150px;
+            height: auto;
+        }
+
+        .left-image {
+            left: -170px;
+        }
+
+        .right-image {
+            right: -170px;
+        }
+
+        /* Win Probability Styles */
+        .win-probability-container {
+            text-align: center;
+            width: 100%;
+            margin-top: 1em; /* Reduced margin */
+        }
+
+        .win-probability-header {
+            font-size: 0.69rem; /* Smaller font size */
+            margin-bottom: 0.5rem; /* Reduced margin */
+        }
+
+        .win-probability-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .win-probability-team {
+            width: 15%; /* Reduced width */
+            text-align: center;
+            font-size: 0.8rem; /* Smaller font size */
+        }
+
+        .win-probability-percentage {
+            display: block;
+            font-size: 0.8rem; /* Smaller font size */
+            margin-top: 0.25rem; /* Reduced margin */
+        }
+
+        .win-probability-bar-inner {
+            display: flex;
+            width: 100%;
+            height: 5px; /* Reduced height */
+            background-color: #ffccbc;
+            border-radius: 5px; /* Smaller border radius */
+            overflow: hidden;
+        }
+
+        .win-probability-bar-left {
+            background-color: #A020F0;
+            height: 100%;
+        }
+
+        .win-probability-bar-right {
+            background-color: #0000FF;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GPL - Gully Premier League</h1>
+    </header>
+    <main>
+        <img src="C:/Users/praka/Downloads/Sunrising.png" alt="Left Side Image" class="side-image left-image">
+        <img src="C:/Users/praka/Downloads/kNIGHT.png" alt="Right Side Image" class="side-image right-image">
+        <section class="points-table">
+            <h2>Points Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Position</th>
+                        <th>Team</th>
+                        <th>Played</th>
+                        <th>Won</th>
+                        <th>Lost</th>
+                        <th>Tied</th>
+                        <th>Points</th>
+                        <th>NRR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="sunrising-indians">
+                        <td>1</td>
+                        <td><a href="C:\Users\praka\Desktop\health-is-valuable-main\health-is-valuable-main\Pages\si.html">Sunrising Indians</a></td>
+                        <td>10</td>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>16</td>
+                        <td>+2.75</td>
+                    </tr>
+                    <tr class="knight-mega-kings">
+                        <td>2</td>
+                        <td><a href="C:\Users\praka\Desktop\health-is-valuable-main\health-is-valuable-main\Pages\kmk.html">Knight Mega Kings</a></td>
+                        <td>10</td>
+                        <td>3</td>
+                        <td>7</td>
+                        <td>0</td>
+                        <td>6</td>
+                        <td>+0.95</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <a href="C:/Users/praka/Desktop/health-is-valuable-main/health-is-valuable-main/Pages/nextmatchesh.html">Next Match Fixtures</a>
+        <!-- Win Probability Section -->
+        <div class="win-probability-container">
+            <div class="win-probability-header">
+                WIN PROBABILITY
+            </div>
+            <div class="win-probability-bar">
+                <div class="win-probability-team">
+                    Indians
+                    <span class="win-probability-percentage">69%</span>
+                </div>
+                <div class="win-probability-bar-inner">
+                    <div class="win-probability-bar-left" style="width: 69%;"></div>
+                    <div class="win-probability-bar-right" style="width: 31%;"></div>
+                </div>
+                <div class="win-probability-team">
+                     Kings
+                    <span class="win-probability-percentage">31%</span>
+                </div>
+            </div>
+        </div>
+        <!-- End of Win Probability Section -->
+        <section class="team">
+            <h2><a href="C:\Users\praka\Desktop\health-is-valuable-main\health-is-valuable-main\Pages\si.html">Sunrising Indians Squad</a></h2>
+            <ul>
+                <li><a href="C:/Users/praka/Desktop/health-is-valuable-main/health-is-valuable-main/Pages/payerinfo.html">Surya Teja (Captain)</a></li>
+                <li><a href="C:/Users/praka/Desktop/health-is-valuable-main/health-is-valuable-main/Pages/Tinesh.html">Tinesh Reddy Geddam</a></li>
+                <li class="substitute"><a href="C:/Users/praka/Desktop/health-is-valuable-main/health-is-valuable-main/Pages/Yashasu.html">Yashasu (Substitute)</a></li>
+            </ul>
+        </section>
+        <section class="team">
+            <h2><a href="C:\Users\praka\Desktop\health-is-valuable-main\health-is-valuable-main\Pages\kmk.html">Knight Mega Kings Squad</a></h2>
+            <ul>
+                <li><a href="C:\Users\praka\Desktop\health-is-valuable-main\health-is-valuable-main\Pages\Krithik.html">Krithik (Captain)</a></li>
+                <li><a href="C:\Users\praka\Desktop\health-is-valuable-main\health-is-valuable-main\Pages\Krishika.html">Jashwanth</a></li>
+                <li class="substitute"><a href="C:\Users\praka\Desktop\health-is-valuable-main\health-is-valuable-main\Pages\Vaibav.html">Vaibav (Substitute)</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Gully Premier League. All rights reserved.
+    </footer>
+</body>
+</html>
