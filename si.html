@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrising Indians Team</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #00b4db, #0083b0);
+            color: #333;
+        }
+        header {
+            background-color: #ff9800;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .banner {
+            background: url('team-banner.jpg') no-repeat center center/cover;
+            height: 300px;
+            text-align: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .banner h1 {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .content h2 {
+            color: #ff9800;
+            margin-bottom: 10px;
+        }
+        .squad ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .squad ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .matches {
+            display: flex;
+            justify-content: center;
+        }
+        .matches table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .matches table, .matches th, .matches td {
+            border: 1px solid #ddd;
+        }
+        .matches th, .matches td {
+            padding: 15px;
+            text-align: left;
+        }
+        .matches th {
+            background-color: #ff5722;
+            color: white;
+        }
+        .matches tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        footer {
+            background-color: #00FF00;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\praka\Downloads\Sunrising.png" alt="Logo">
+        <h1>Sunrising Indians Team</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#squad">Squad</a></li>
+                <li><a href="#matches">Upcoming Matches</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <h1>Welcome to Sunrising Indians Team</h1>
+    </div>
+
+    <div class="container">
+        <div id="about" class="content">
+            <h2>About Us</h2>
+            <p>The Sunrising Indians are a professional cricket team known for their competitive spirit and sportsmanship. Founded in 2024, the team has quickly risen to prominence in the league, boasting a roster of talented players from around the world.</p>
+        </div>
+
+        <div id="squad" class="content">
+            <h2>Squad</h2>
+            <ul>
+                <li><a href="C:\Users\praka\Desktop\health-is-valuable-main\health-is-valuable-main\Pages\payerinfo.html" target="_blank">Surya Teja</a> - Bowler</li>
+                <li><a href="C:\Users\praka\Desktop\health-is-valuable-main\health-is-valuable-main\Pages\Tinesh.html" target="_blank">Tinesh Reddy Geddam</a> - All-rounder</li>
+                <li><a href="C:\Users\praka\Desktop\health-is-valuable-main\health-is-valuable-main\Pages\Yashasu.html" target="_blank">Yashasu</a> - Batsman</li>
+            </ul>
+        </div>
+
+        <div id="matches" class="content matches">
+            <h2>Upcoming Matches</h2>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Opponent</th>
+                    <th>Venue</th>
+                </tr>
+                <tr>
+                    <td>2024-05-18</td>
+                    <td>Knight Mega Kings</td>
+                    <td>Regular Pitch</td>
+                </tr>
+                <tr>
+                    <td>2024-05-19</td>
+                    <td>Knight Mega Kings</td>
+                    <td>Regular Pitch</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="contact" class="content">
+            <h2>Contact Us</h2>
+            <p>For inquiries, please email us at <a href="mailto:contact@sunrisingindians.com">contact@sunrisingindians.com</a></p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Sunrising Indians. All rights reserved.</p>
+    </footer>
+</body>
+</html>
