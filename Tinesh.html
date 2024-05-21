@@ -6,9 +6,9 @@
     <title>Player Information</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #00ff00, #8a2be2); /* Gradient background from green to violet */
-            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #005c97, #363795); /* Gradient background from dark blue to violet */
+            color: #ffffff;
             margin: 0;
             padding: 0;
             display: flex;
@@ -18,25 +18,36 @@
         }
 
         .player-info {
-            background-color: rgba(0, 0, 0, 0.5);
-            border-radius: 25%; /* Squircle shape */
-            padding: 40px;
-            width: 300px;
-            height: 300px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            width: 320px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
+            backdrop-filter: blur(10px);
         }
 
         .player-info h2 {
             margin-top: 0;
+            font-size: 1.8em;
         }
 
         .player-info p {
-            margin: 10px 0;
+            margin: 8px 0;
+            font-size: 1.1em;
+        }
+
+        .player-info p strong {
+            color: #FFD700; /* Gold color for emphasis */
+        }
+
+        .player-info:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
         }
     </style>
 </head>
