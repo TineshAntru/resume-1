@@ -17,18 +17,23 @@
             height: 100vh;
         }
 
-        .player-info {
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-color: rgba(0, 0, 0, 0.5);
             border-radius: 25%; /* Squircle shape */
             padding: 40px;
-            width: 300px;
-            height: 300px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .player-info {
+            margin-right: 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-align: center;
         }
 
         .player-info h2 {
@@ -38,17 +43,43 @@
         .player-info p {
             margin: 10px 0;
         }
+
+        .player-image {
+            width: 150px; /* Adjust the size as needed */
+            height: auto;
+            border-radius: 50%; /* Make the image circular */
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                border-radius: 15%; /* Adjust for smaller screens */
+                padding: 20px;
+            }
+
+            .player-info {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .player-image {
+                width: 100px; /* Adjust the size for smaller screens */
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="player-info">
-        <h2>Tinesh Reddy Geddam</h2>
-        <p><strong>Team:</strong> Sunrising Indians</p>
-        <p><strong>Age:</strong> 13</p>
-        <p><strong>Position:</strong> Playing 2</p>
-        <p><strong>Known For:</strong> Wicket Keeping and Finishings</p>
-        <p><strong>Records:</strong> 1 century, 4 Half Centuries, 5 Wickets In GPL-2024</p>
-        <p><strong>Economy:</strong> 11.1</p>
+    <div class="container">
+        <div class="player-info">
+            <h2>Tinesh Reddy Geddam</h2>
+            <p><strong>Team:</strong> Sunrising Indians</p>
+            <p><strong>Age:</strong> 13</p>
+            <p><strong>Position:</strong> Playing 2</p>
+            <p><strong>Known For:</strong> Wicket Keeping and Finishings</p>
+            <p><strong>Records:</strong> 1 century, 4 Half Centuries, 5 Wickets In GPL-2024</p>
+            <p><strong>Economy:</strong> 11.1</p>
+        </div>
+        <img src="https://gullypl.github.io/resume/Sunrising.png" alt="Player Image" class="player-image">
     </div>
 </body>
 </html>
