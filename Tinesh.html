@@ -15,6 +15,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            overflow: hidden; /* Prevent scrolling */
         }
 
         .container {
@@ -26,6 +27,8 @@
             padding: 40px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
             text-align: center;
+            position: relative;
+            z-index: 1;
         }
 
         .player-info {
@@ -50,6 +53,17 @@
             border-radius: 50%; /* Make the image circular */
         }
 
+        .message {
+            margin-top: 20px;
+            font-size: 1.2em;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
         @media (max-width: 600px) {
             .container {
                 flex-direction: column;
@@ -66,9 +80,19 @@
                 width: 100px; /* Adjust the size for smaller screens */
             }
         }
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
     </style>
 </head>
 <body>
+    <div id="particles-js"></div>
     <div class="container">
         <div class="player-info">
             <h2>Tinesh Reddy Geddam</h2>
@@ -78,8 +102,32 @@
             <p><strong>Known For:</strong> Wicket Keeping and Finishings</p>
             <p><strong>Records:</strong> 1 century, 4 Half Centuries, 5 Wickets In GPL-2024</p>
             <p><strong>Economy:</strong> 11.1</p>
-            <p><strong>Health:</strong>Good</p>
+            <p><strong>Health:</strong> Good</p>
+            <div class="message">
+                He owns both the purple cap and orange cap!
+            </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        // Initialize particles.js
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 100 },
+                size: { value: 3 },
+                color: { value: ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'] },
+                opacity: { value: 0.8 },
+                move: {
+                    enable: true,
+                    speed: 6
+                }
+            },
+            interactivity: {
+                events: {
+                    onclick: { enable: true, mode: 'repulse' }
+                }
+            }
+        });
+    </script>
 </body>
 </html>
