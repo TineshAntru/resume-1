@@ -89,6 +89,18 @@
             left: 0;
             z-index: 0;
         }
+
+        .bottom-right-link {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            z-index: 2;
+        }
+
+        .bottom-right-link img {
+            width: 30px; /* Adjust the size of the image */
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -108,6 +120,9 @@
             </div>
         </div>
     </div>
+    <a href="https://example.com" class="bottom-right-link">
+        <img src="path/to/your/image.png" alt="Your Image">
+    </a>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
         // Initialize particles.js
