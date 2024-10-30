@@ -10,8 +10,8 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: #1c1c1e;
-            color: #e5e5e7;
+            background: #1e2021;
+            color: #e8e6e3;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,8 +20,8 @@
         }
 
         header {
-            background-color: #292b2c;
-            color: #e5e5e7;
+            background: linear-gradient(45deg, #8e44ad, #d35400);
+            color: #ffeb3b;
             padding: 1em 0;
             width: 100%;
             position: fixed;
@@ -34,32 +34,33 @@
             padding: 2em;
             max-width: 900px;
             width: 100%;
-            background-color: #2c2c2e;
+            background: radial-gradient(circle, #2d2f30, #1e2021);
             border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
             text-align: center;
             margin: 100px auto 60px;
             position: relative;
         }
 
         h1, h2 {
-            margin: 0 0 1em;
-            color: #f5a623;
+            color: #ffd700;
+            margin-bottom: 0.5em;
+            text-shadow: 2px 2px 5px rgba(255, 223, 0, 0.4);
         }
 
-        .points-table {
-            margin: 2em 0;
+        .points-table, .team {
+            margin-top: 2em;
         }
 
         table {
             width: 69%;
             border-collapse: collapse;
-            margin: 1em 0;
+            margin: 1em auto;
             text-align: center;
         }
 
         table, th, td {
-            border: 1px solid #3a3a3c;
+            border: 1px solid #3e3f3f;
         }
 
         th, td {
@@ -68,37 +69,33 @@
         }
 
         th {
-            background-color: #444446;
-            color: #e5e5e7;
+            background-color: #8e44ad;
+            color: #ffeb3b;
         }
 
         tr:nth-child(even) {
-            background-color: #3a3a3c;
+            background-color: #2e2e2e;
         }
 
         .sunrising-indians {
             background: linear-gradient(to right, #ff9800, #ff5722);
-            color: white;
+            color: #fff;
         }
 
         .knight-mega-kings {
             background: linear-gradient(to right, #7b1fa2, #4a148c);
-            color: white;
+            color: #fff;
         }
 
         footer {
             text-align: center;
             padding: 1em 0;
             background-color: #292b2c;
-            color: #e5e5e7;
+            color: #ffeb3b;
             position: fixed;
             width: 100%;
             bottom: 0;
             box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .team {
-            margin: 2em 0;
         }
 
         .team h2 {
@@ -130,25 +127,7 @@
             background-color: #4a4a4e;
         }
 
-        .side-image {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 100px;
-            height: auto;
-        }
-
-        .left-image {
-            left: -120px;
-        }
-
-        .right-image {
-            right: -120px;
-        }
-
         .win-probability-container {
-            text-align: center;
-            width: 100%;
             margin-top: 1em;
         }
 
@@ -168,12 +147,7 @@
             width: 20%;
             text-align: center;
             font-size: 1rem;
-        }
-
-        .win-probability-percentage {
-            display: block;
-            font-size: 1rem;
-            margin-top: 0.25rem;
+            color: #ffd700;
         }
 
         .win-probability-bar-inner {
@@ -183,6 +157,7 @@
             background-color: #4a4a4e;
             border-radius: 10px;
             overflow: hidden;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
         }
 
         .win-probability-bar-left {
@@ -196,7 +171,7 @@
         }
 
         a {
-            color: #1e88e5;
+            color: #ffd700;
             text-decoration: none;
             font-weight: 700;
             transition: color 0.3s ease;
@@ -204,7 +179,24 @@
 
         a:hover {
             text-decoration: underline;
-            color: #f5a623;
+            color: #ff5722;
+        }
+
+        .side-image {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100px;
+            height: auto;
+            opacity: 0.8;
+        }
+
+        .left-image {
+            left: -120px;
+        }
+
+        .right-image {
+            right: -120px;
         }
     </style>
 </head>
@@ -263,27 +255,17 @@
         <a href="https://gullypl.github.io/resume/fpa.html">Fair Play Award</a>
         <br>
         <a href="https://www.google.com/maps/@17.5218729,78.4284927,3a,75y,123.45h,80.29t/data=!3m6!1e1!3m4!1sWujQWP8vRHXQAFYtUYgISA!2e0!7i13312!8i6656?entry=ttu">Pitch Of Upcoming Matches</a>
-        <!-- Win Probability Section -->
         <div class="win-probability-container">
-            <div class="win-probability-header">
-                WIN PROBABILITY
-            </div>
+            <div class="win-probability-header">WIN PROBABILITY</div>
             <div class="win-probability-bar">
-                <div class="win-probability-team">
-                    Indians
-                    <span class="win-probability-percentage">91%</span>
-                </div>
+                <div class="win-probability-team">Indians<span class="win-probability-percentage">91%</span></div>
                 <div class="win-probability-bar-inner">
                     <div class="win-probability-bar-left" style="width: 91%;"></div>
                     <div class="win-probability-bar-right" style="width: 9%;"></div>
                 </div>
-                <div class="win-probability-team">
-                    Kings
-                    <span class="win-probability-percentage">9%</span>
-                </div>
+                <div class="win-probability-team">Kings<span class="win-probability-percentage">9%</span></div>
             </div>
         </div>
-        <!-- End of Win Probability Section -->
         <section class="team">
             <h2><a href="https://gullypl.github.io/resume/si.html#squad">Sunrising Indians Squad</a></h2>
             <ul>
@@ -303,7 +285,6 @@
             </ul>
         </section>
     </main>
-
     <footer>
         &copy; 2024 Gully Premier League. All rights reserved.
     </footer>
